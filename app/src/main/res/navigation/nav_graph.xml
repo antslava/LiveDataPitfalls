@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="org.antmobile.livedata.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_test">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_case1Fragment"
+            app:destination="@id/case1Fragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_case2Fragment"
+            app:destination="@id/case2Fragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_case3Fragment"
+            app:destination="@id/case3Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/case1Fragment"
+        android:name="org.antmobile.livedata.case1.Case1Fragment"
+        android:label="Case1Fragment"
+        tools:layout="@layout/fragment_test">
+
+    </fragment>
+    <fragment
+        android:id="@+id/case2Fragment"
+        android:name="org.antmobile.livedata.case2.Case2Fragment"
+        android:label="Case2Fragment"
+        tools:layout="@layout/fragment_test" />
+
+    <fragment
+        android:id="@+id/case3Fragment"
+        android:name="org.antmobile.livedata.case3.Case3Fragment"
+        android:label="Case3Fragment"
+        tools:layout="@layout/fragment_test" />
+</navigation>
