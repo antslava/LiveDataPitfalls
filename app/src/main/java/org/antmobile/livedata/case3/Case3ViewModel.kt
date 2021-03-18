@@ -21,6 +21,7 @@ class Case3ViewModel : ViewModel() {
         get() = _uiState
 
     fun fetch() {
+        _uiState.value = UiState("Empty", "Empty")
         fetchFirstValue()
         fetchSecondValue()
     }

@@ -1,6 +1,5 @@
 package org.antmobile.livedata.case1
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -24,6 +23,7 @@ class Case1ViewModel(
         get() = _uiState
 
     fun fetch() {
+        _uiState.value = UiState("Empty", "Empty")
         fetchFirstValue()
         fetchSecondValue()
     }
